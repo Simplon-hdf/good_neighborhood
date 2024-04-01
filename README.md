@@ -81,6 +81,57 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 
 </details>
 
+# Introduction
+Dans le cadre de la formation CDA dispensé par Simplon, mon équipe doit réaliser un projet Fil-Rouge.
+
+Ce projet consiste en la création d'une Application facilitant la communication ainsi que l'entraide de voisinnage.
+
+L'équipe est constituée de 2 membres :
+Définir les rôles de scrum master et product owner
+ALLEGRE Alix tech lead et développeur
+
+SOTGIU Guilllaume ...
+... qui a le rôle de Product Owner dont la fonction est entre autre de prendre en charge les intéractions
+entre l'équipe en charge du projet et le client.
+... qui a le rôle de Scrum Master dont la fonction est de diriger les membres de l'équipe en charge du projet
+et d'assigner des tâches à chacun.
+
+... qui a le rôle de Développeur dont la fonction est de développer les différentes solutions élaborées par tous
+les membres de l'équipe en charge du projet et validées par le client.
+
+... qui a lui aussi le rôle de Développeur.
+
+Nous travaillons donc en Méthode Agile qui est une méthodologie utilisée au sein des entreprises dans la majorité des cas.
+Note : Le Product Owner ainsi que le Scrum Master ont aussi pour rôle de développer, cependant, certaines responsabilités sont inhérentes à ces rôles spécifiques.
+
+# Architecture projet
+Ce Repository est découpé selon certaines bonnes pratiques, nous allons les expliquer :
+
+Le dossier .build correspond à toutes les ressources relatives au build de l'application.
+Les fichiers CMAKE par exemple, devraient être placés dans ce dossier, ainsi que les fichiers SH,
+ou encore les fichiers relatifs à Docker par exemple.
+
+Le dossier .config correspond aux ressources relatives à la configuration de l'environnement
+d'éxecution local, afin d'initialiser le projet.
+
+Le dossier .github correspond aux ressources relatives à Github, ce dossier peut contenir
+la liste non-exhaustive des contributeurs ainsi que le code de conduite à adopter entre autre.
+
+Le dossier dep correspond aux dépendances relatives au projet, ce dossier doit contenir
+les dépendances relatives au bon fonctionnement de l'application.
+
+Le dossier doc correspond aux ressources relatives à la documentation du projet ainsi qu'à
+l'application.
+
+Le dossier res correspond aux ressources statiques relatives au projet ainsi que l'application,
+il peut s'agir d'image par exemple.
+
+Le dossier src correspond aux fichiers source de l'application, c'est à dire le code source
+de cette dernière.
+
+Le dossier test correspond aux ressources relatives aux tests au cours du développement,
+c'est à dire les test unitaires, les tests d'intégrations par exemple.
+
 ## Author
 
 ## License
