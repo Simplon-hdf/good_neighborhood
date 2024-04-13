@@ -85,15 +85,14 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 Dans le cadre de la formation CDA dispensé par Simplon, mon équipe doit réaliser un projet Fil-Rouge.
 
 Ce projet consiste en la création d'une Application facilitant la communication ainsi que l'entraide de voisinnage.
+Nous avons choisi de tavailler en méthodologie Agile SCRUM qui, étant simple et légère est conçue pour la gestion de projets de petite à moyenne taille, avec une seule équipe de développement.
 
 L'équipe est constituée de 2 membres :
-Définir les rôles de scrum master et product owner
-ALLEGRE Alix tech lead et développeur
 
-SOTGIU Guilllaume ...
-... qui a le rôle de Product Owner dont la fonction est entre autre de prendre en charge les intéractions
-entre l'équipe en charge du projet et le client.
-... qui a le rôle de Scrum Master dont la fonction est de diriger les membres de l'équipe en charge du projet
+ALLEGRE Alix tech lead et développeur qui a le rôle de Scrum Master dont la fonction est de diriger les membres de l'équipe en charge du projet
+
+SOTGIU Guilllaume qui a le rôle de Product Owner dont la fonction est entre autre de prendre en charge les intéractions entre l'équipe en charge du projet et le client.
+
 et d'assigner des tâches à chacun.
 
 ... qui a le rôle de Développeur dont la fonction est de développer les différentes solutions élaborées par tous
