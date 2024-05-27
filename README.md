@@ -100,7 +100,7 @@ les membres de l'équipe en charge du projet et validées par le client.
 
 ... qui a lui aussi le rôle de Développeur.
 
-Nous travaillons donc en Méthode Agile qui est une méthodologie utilisée au sein des entreprises dans la majorité des cas.
+Nous travaillons donc en Méthode Agile SCRUM qui est une méthodologie utilisée au sein des entreprises dans la majorité des cas.
 Note : Le Product Owner ainsi que le Scrum Master ont aussi pour rôle de développer, cependant, certaines responsabilités sont inhérentes à ces rôles spécifiques.
 
 # Architecture projet
