@@ -2,11 +2,21 @@
 
 ### Utilisateurs :
 
-- Un utilisateur doit créer un compte pour accéder aux fonctionnalités de l'application.
-- Les utilisateurs doivent fournir des informations personnelles véridiques lors de la création de leur compte.
-- Les utilisateurs doivent utiliser un mot de passe fort et unique pour sécuriser leur compte.
-- Les utilisateurs doivent être en mesure de modifier leurs informations personnelles et leur mot de passe à tout moment.
-- Les utilisateurs doivent être en mesure de supprimer leur compte à tout moment.
+- Un utilisateur doit créer un compte pour accéder aux fonctionnalités de l'application
+- Un utilisateur doit entrer son adresse afin de se localiser
+- Un utilisateur peut modifier son profil
+- Un utilisateur peut supprimer son compte
+- Un utilisateur doit créer un groupe ou rejoindre un groupe pour accéder aux fonctionnalités de l'application
+- Un utilisateur peut créer un groupe
+- Un utilisateur peut rejoindre un groupe
+- Un utilisateur peut rejoindre plusieurs groupes
+- Un utilisateur peut quitter un groupe
+- Un utilisateur a accès au fil d'actualité du groupe qu'il a rejoint
+- Un utilisateur peut créer une publication générale, sans catégorie
+- Un utilisateur peut créer une publication en choisissant parmi une liste de catégories
+- Un utilisateur peut filtrer les publications par catégorie
+- Un utilisateur peut poster un commentaire sur une publication
+- Un utilisateur peut discuter avec un autre utilisateur via une messageire privée
 - Un utilisateur possède :
   - un identifiant unique
   - un nom
@@ -16,24 +26,32 @@
   - une adresse postale
   - une adresse mail
 
+
+
 ### Publications :
 
-- Les utilisateurs doivent être en mesure de publier des alertes et des informations sur leur quartier de résidence.
 - Les publications doivent être géolocalisées et visibles uniquement par les utilisateurs résidant dans le même quartier.
 - Les utilisateurs doivent être en mesure de signaler les publications inappropriées ou abusives.
 - Les publications signalées doivent être examinées par les modérateurs de l'application dans les plus brefs délais.
 - Les publications inappropriées ou abusives doivent être supprimées par les modérateurs de l'application.
-- Une publication possède :
-  - un type
+
+- Une publication peut appartenir à une catégorie
+- Une publication peut être générale
+- 
+- Une publication doit avoir :
+  - une catégorie
   - un titre
   - une description
   - Une localisation
   - un auteur
   - une date
   - une heure
-  - une ou plusieurs images d'illustration
+  
+- Une publication peut avoir :
+  - des images et/ou vidéos d'illustration
+  - un prix
 
-### types de Publications :
+### Illustrations :
 
 ### Gestion des services et des évènements :
 
