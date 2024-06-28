@@ -1,3 +1,7 @@
+(rgpd en intro ou dans BDD)
+FRONT
+BACK -> API - BDD
+MOBILE
 # Objectif de la stratégie de sécurisation
 
 L'objectif de la stratégie de sécurisation de l'application est de protéger les données
@@ -14,7 +18,7 @@ CSP(Content Security Policy) pour restreindre les sources autorisées à charger
 contenu sur notre app ainsi que SRI (Subresource Integrity) pour vérifier l’intégrité des
 ressources chargées à partir de sources externes.
 
-# Vulnérabilités et principales menaces
+## Vulnérabilités et principales menaces
 
 Voici quelques-unes des menaces de sécurité les plus répandues dont je vais prendre en
 compte :
@@ -41,7 +45,7 @@ Pour tout cela, nous mettrons en place plusieurs mesures de protection indépend
 pour chaque menace envisagée en utilisant le système de défense en profondeur ainsi
 que le moindre privilège.
 
-# Exigences de sécurité requises en fonction des risques encourues
+## Exigences de sécurité requises en fonction des risques encourues
 
 Puisque notre application sera composée d’une partie backend et frontend
 communiquant via une API nous aurons besoin d’utiliser les en-têtes CORS pour
@@ -69,7 +73,7 @@ REACT NATIVE en utilisant les fonctionnalités de sécurité fournies par le fra
 systèmes d'exploitations utilisent des fonctionnalités pour forcer l’utilisation d’une
 connexion HTTPS et mettre en œuvre HSTS.
 
-# Processus de Sanitisation
+## Processus de Sanitisation
 
 Afin de sécuriser notre application, nous aurons besoin de surveiller la nature des
 ressources qui transitent ainsi que de nettoyer les données entrantes et sortantes en
@@ -109,7 +113,7 @@ Recommandation choisies :
 ### R11 : Contrôler l'intégrité des contenus internes
 ### R12 : Contrôler l'intégrité des contenus tiers
 
-# Sécurisation de l'authentification
+## Sécurisation de l'authentification
 
 L’authentification et le stockage des mots de passe nécessitent des exigences de sécurité
 strictes. Une violation de données peut entraîner la divulgation de mots de passe en clair,
@@ -148,7 +152,7 @@ modération des contenus publiés, la vérification de l'identité des utilisate
 surveillance des activités suspectes.
 
 
-# RÈGLES RGPD
+## RÈGLES RGPD (BDD)
 
 Enfin, l'application doit être conçue et développée en conformité avec les
 réglementations et les normes en matière de protection des données personnelles, telles

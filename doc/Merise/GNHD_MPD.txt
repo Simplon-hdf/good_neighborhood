@@ -1,0 +1,128 @@
+CREATE TABLE Security(
+   Id_Security SERIAL,
+   people_description_head VARCHAR(50) ,
+   PRIMARY KEY(Id_Security)
+);
+
+CREATE TABLE Groups(
+   id_group INTEGER,
+   name_group VARCHAR(50)  NOT NULL,
+   street_group VARCHAR(50)  NOT NULL,
+   postal_code_group VARCHAR(50)  NOT NULL,
+   city_group VARCHAR(50)  NOT NULL,
+   PRIMARY KEY(id_group)
+);
+
+CREATE TABLE Address(
+   id_address INTEGER,
+   number_street VARCHAR(50)  NOT NULL,
+   name_street VARCHAR(50)  NOT NULL,
+   zip_code VARCHAR(15)  NOT NULL,
+   city VARCHAR(50)  NOT NULL,
+   PRIMARY KEY(id_address)
+);
+
+CREATE TABLE Users(
+   id_user SERIAL,
+   first_name_user VARCHAR(50)  NOT NULL,
+   last_name_user VARCHAR(50)  NOT NULL,
+   image_profil VARCHAR(100) ,
+   mail_user VARCHAR(20)  NOT NULL,
+   password_user VARCHAR(50)  NOT NULL,
+   role VARCHAR(25)  NOT NULL,
+   id_group INTEGER NOT NULL,
+   PRIMARY KEY(id_user),
+   FOREIGN KEY(id_group) REFERENCES Groups(id_group)
+);
+
+CREATE TABLE Post_informations(
+   Id_post_informations INTEGER,
+   posted_date TIMESTAMP NOT NULL,
+   title_post VARCHAR(50)  NOT NULL,
+   description_post TEXT,
+   category_post VARCHAR(20) ,
+   id_user INTEGER NOT NULL,
+   PRIMARY KEY(Id_post_informations),
+   FOREIGN KEY(id_user) REFERENCES Users(id_user)
+);
+
+CREATE TABLE Prices(
+   id_price INTEGER,
+   price NUMERIC(5,2)  ,
+   Id_post_informations INTEGER NOT NULL,
+   PRIMARY KEY(id_price),
+   UNIQUE(Id_post_informations),
+   FOREIGN KEY(Id_post_informations) REFERENCES Post_informations(Id_post_informations)
+);
+
+CREATE TABLE Comments(
+   id_comment SERIAL,
+   comment TEXT NOT NULL,
+   id_user INTEGER NOT NULL,
+   PRIMARY KEY(id_comment),
+   FOREIGN KEY(id_user) REFERENCES Users(id_user)
+);
+
+CREATE TABLE Messages(
+   id_message INTEGER,
+   message VARCHAR(250)  NOT NULL,
+   sent_date TIMESTAMP NOT NULL,
+   id_user INTEGER NOT NULL,
+   id_user_1 INTEGER NOT NULL,
+   PRIMARY KEY(id_message),
+   FOREIGN KEY(id_user) REFERENCES Users(id_user),
+   FOREIGN KEY(id_user_1) REFERENCES Users(id_user)
+);
+
+CREATE TABLE Illustrations(
+   id_content SERIAL,
+   content TEXT NOT NULL,
+   Id_post_informations INTEGER NOT NULL,
+   id_comment INTEGER,
+   PRIMARY KEY(id_content),
+   FOREIGN KEY(Id_post_informations) REFERENCES Post_informations(Id_post_informations),
+   FOREIGN KEY(id_comment) REFERENCES Comments(id_comment)
+);
+
+CREATE TABLE Dates_events(
+   id_date_event INTEGER,
+   date_start DATE NOT NULL,
+   date_end DATE NOT NULL,
+   Id_post_informations INTEGER NOT NULL,
+   PRIMARY KEY(id_date_event),
+   UNIQUE(Id_post_informations),
+   FOREIGN KEY(Id_post_informations) REFERENCES Post_informations(Id_post_informations)
+);
+
+CREATE TABLE Types(
+   id_type INTEGER,
+   type VARCHAR(20)  NOT NULL,
+   Id_post_informations INTEGER NOT NULL,
+   PRIMARY KEY(id_type),
+   UNIQUE(Id_post_informations),
+   FOREIGN KEY(Id_post_informations) REFERENCES Post_informations(Id_post_informations)
+);
+
+CREATE TABLE Contains(
+   id_content INTEGER,
+   id_message INTEGER,
+   PRIMARY KEY(id_content, id_message),
+   FOREIGN KEY(id_content) REFERENCES Illustrations(id_content),
+   FOREIGN KEY(id_message) REFERENCES Messages(id_message)
+);
+
+CREATE TABLE Asso_13(
+   id_user INTEGER,
+   id_address INTEGER,
+   PRIMARY KEY(id_user, id_address),
+   FOREIGN KEY(id_user) REFERENCES Users(id_user),
+   FOREIGN KEY(id_address) REFERENCES Address(id_address)
+);
+
+CREATE TABLE Asso_14(
+   id_group INTEGER,
+   id_address INTEGER,
+   PRIMARY KEY(id_group, id_address),
+   FOREIGN KEY(id_group) REFERENCES Groups(id_group),
+   FOREIGN KEY(id_address) REFERENCES Address(id_address)
+);
