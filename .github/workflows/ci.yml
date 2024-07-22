@@ -1,0 +1,11 @@
+name: Exemple de workflow CI 
+# définit le ou les évenements qui déclencheront le workflow. là il se déclanche à chaque push
+on: [push]
+
+jobs: # Contient un ensemble de jobs à exécuter. Ici, il y a un seul job nommé build.
+  build:
+    runs-on: ubuntu-latest # Spécifie le type de runner que le job doit utiliser. ubuntu-latest indique la dernière version d'Ubuntu fournie par GitHub.
+    steps: # Étapes à exécuter dans le job
+    - uses: actions/checkout@v2 # Utilise l'action checkout pour cloner votre dépôt dans le runner
+    - name: test d'Exécution
+      run: echo "LE workfliw CI est déclanché par un push sur GitHub" # Exécute une commande shell
