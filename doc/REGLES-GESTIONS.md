@@ -1,157 +1,181 @@
 # Règles de gestion de l'application :
 
-### Utilisateurs :
+## Gestion des utilisateurs :
 
-- Un utilisateur doit créer un compte pour accéder aux fonctionnalités de l'application
-- Un utilisateur doit entrer son adresse afin de se localiser
-- Un utilisateur peut modifier son profil
-- Un utilisateur peut supprimer son compte
-- Un utilisateur doit créer un groupe ou rejoindre un groupe pour accéder aux fonctionnalités de l'application
-- Un utilisateur peut créer un groupe
-- Un utilisateur peut rejoindre un groupe
-- Un utilisateur peut rejoindre plusieurs groupes
-- Un utilisateur peut quitter un groupe
-- Un utilisateur a accès au fil d'actualité du groupe qu'il a rejoint
-- Un utilisateur peut créer une publication générale, sans catégorie
-- Un utilisateur peut créer une publication en choisissant parmi une liste de catégories
-- Un utilisateur peut filtrer les publications par catégorie
-- Un utilisateur peut poster un commentaire sur une publication
-- Un utilisateur peut discuter avec un autre utilisateur via une messageire privée
 - Un utilisateur possède :
   - un identifiant unique
   - un nom
   - un prénom
   - un mot de passe
   - une illustration de profil
-  - une adresse postale
   - une adresse mail
+  - un numéro de téléphone
+
+- Un utilisateur doit créer un compte pour utiliser l'application
+- Un utilisateur peut :
+  - afficher son compte
+  - modifier son compte
+  - supprimer son compte
+  
+- Un utilisateur doit créer ou rejoindre un groupe pour accéder aux fonctionnalités de l'application
+- Un utilisateur peut :
+  - rejoindre un ou plusieurs groupes
+  - afficher les informations du groupe
+  - modifier l'illustration du groupe
+  - modifier le nom du groupe
+  - afficher fil d'actualité du groupe
+  - quitter un groupe
+  
+- Un utilisateur peut : 
+  - créer une publication
+  - modifier une publication
+  - afficher une publication
+  - filtrer les publications par catégorie
+  - supprimer une publication
+  - signaler les publications inappropriées ou abusives
+
+- Un utilisateur peut poster un commentaire sur une publication
+- Un utilisateur peut discuter avec un autre utilisateur via une messagerie privée
+- Un utilisateur peut s'adresser au modérateur par le biais d'un formulaire de contact
+- Un utilisateur peut :
+  - bloquer un utilisateur
+  - signaler un utilisateur
+  
+
+## Gestion des groupes :
+
+- Un groupe possède :
+  - un nom
+  - une adresse
+
+- Un groupe peut avoir :
+  - une illustration
 
 
+- Un groupe doit être crée par un utilisateur
+- Un groupe peut avoir un ou plusieurs membres
+- Des utilisateurs peuvent y être ajoutés sous invitation d'autres utilisateurs déjà membres du groupe
+- Une invitation peut être faite par :
+  - envoie d'un SMS
+  - ajout de coordonées (par le biais d'un formulaire)
 
-### Publications :
+- Un membre du groupe a la possibilité d'ajouter des utilisateurs
+- Un membre a la possibilité de quitter un groupe
 
-- Une publication doit être géolocalisées et visibles uniquement par les utilisateurs résidant dans le même quartier.
-- Un utilisateur doit être en mesure de signaler les publications inappropriées ou abusives.
-- Une publication signalée doit être examinée par les modérateurs de l'application dans les plus brefs délais.
-- Une publication inappropriée ou abusive doit être supprimée par les modérateurs de l'application.
-- Une publication peut appartenir à la catégorie : 
+
+## Gestion des publications :
+
+- Une publication possède :
+  - un identifiant
+  - une catégorie
+  - un auteur
+  - un titre
+  - une description
+  - une date
+  - une heure
+  - un espace commentaire
+
+- Une publication peut avoir :
+  - une sous-catégorie
+  - des options supplémentaires en fonction des sous-catégories
+  - du [contenu](#contenu) (des images et/ou vidéos d'illustration)
+  - un ou plusieurs tags
+
+- Une publications doit être filtrée par catégorie 
+- Une publication peut appartenir à la catégorie :
     -Services
     -Ventes et dons
     -Trouvés/perdus
     -Incidents
     -Évènements
     -Général
-- Une publications peut être filtrée par catégorie 
-- Une publication peut être générale
-- 
-- Une publication doit avoir :
-  - un identifiant
-  - une catégorie
-  - un titre
-  - une description
-  - Une localisation
-  - un auteur
-  - une date
-  - une heure
+
+- Une publication inappropriée ou abusive doit être signalée par les utilisateurs par le biais d'un formulaire
+
+
   
-- Une publication peut avoir :
-  - des images et/ou vidéos d'illustration
-  - un prix
-  - un ou plusieurs tags
+## Contenu :
 
-### Contenu :
--Un contenu est un lien image ou vidéo
--Un contenu doit avoir un identifiant unique.
--Une illustration appartient à une publication.
--Les illustrations appartenant à un post sont restreintes au nombre de cinq.
 - Un contenu doit avoir :
-  - un identifiant
-  - un contenu
+  - un identifiant unique
+  - un lien redigeant vers une image ou une vidéo
+  
+- Le contenu est ajouté pour illustrer une publication
+- Le contenu est ajouté au moment de la création de la publication
+- Le contenu est limité au nombre de 5 par publication
 
-### Catégorie services :
+- Le contenu est ajouté pour illustrer un commentaire
+- Le contenu est ajouté au moment de l'écriture du commentaire
 
-- Un utilisateur doit être en mesure de proposer des services aux habitants de leur quartier.
-- Un service doit être géolocalisé et visible uniquement par les utilisateurs résidant dans le même quartier.
-- Un utilisateur doit être en mesure de laisser des avis sur les services auxquels ils ont participé.
-- Une publication service peut être publiée par un utilisateur
-- Un service comprends deux sous-catégories:
-    - Service proposé : l'utilisateur propose ses compétences 
-    - Service demandé : l'utilisateur demande un service 
-- L'utilisateur peut signaler son intérêt pour une publication
 
-- Un service doit avoir :
-  - un identifiant
-  - un titre
-  - une description
-  - choix entre proposition et demande de service
 
-- Un service peut avoir :
-- un ou plusieurs contenu imagé
+## Catégorie services :
+
+- La catégorie service doit avoir :
+- un identifiant
+- un prix
+- deux sous-catégories :
+  - Proposer
+  - Demander
+
 
 
 ### Catégorie évènements :
 
-- Un utilisateur doivt être en mesure d'organiser des évènements dans leur quartier.
-- Un évènement doit être géolocalisé et visible uniquement par les utilisateurs résidant dans le même quartier.
-- Un utilisateur doit être en mesure de s'inscrire aux évènements proposés par d'autres utilisateurs.
-- Un utilisateur doit être en mesure de laisser des avis sur les évènements auxquels ils ont participé.
-- L'utilisateur peut signaler son intérêt pour une publication
+- La catégorie évènement doit avoir :
+- un identifiant
+- une date de début
+- une date de fin
 
-- Un évènement doit avoir :
+
+### Catégorie objets trouvés et perdus :
+
+- La catégorie objets trouvé/perdus doit avoir :
   - un identifiant
-  - un titre
-  - une description
+  - deux sous-catégories :
+    - trouvé
+    - perdu
+  
 
-- Un évènement peut avoir :
-- un ou plusieurs contenu imagé
-
-### Gestion des objets trouvés ou perdus :
-
-- Un utilisateur doit être en mesure de publier des informations sur les objets ou les animaux trouvés ou perdus dans leur quartier.
-- Une publication doit être géolocalisée et visible uniquement par les utilisateurs résidant dans le même quartier.
-- Un utilisateur doit être en mesure de contacter les auteurs des publications pour récupérer les objets ou les animaux trouvés.
-
-- Un objet trouvé doit avoir :
-  - un identifiant
-  - un titre
-  - une description
-
-- Un objet peut avoir :
-- un ou plusieurs contenu imagé
 
 ### Catégorie ventes et dons :
 
-- Un utilisateur doit être en mesure de proposer des objets de seconde main, des animaux aux autres utilisateurs de leur quartier.
-- Les échanges doivent être géolocalisés et visibles uniquement par les utilisateurs résidant dans le même quartier.
-- Un utilisateur doit être en mesure de contacter les auteurs des publications pour échanger les objets proposés.
-- L'utilisateur propose des objets ou animaux 
-- L'utilisateur peut signaler son intérêt pour une publication
-
 - La catégorie ventes/dons doit avoir :
   - un identifiant
-  - un titre
-  - une description
+  - deux sous-catégories :
+    - vente
+    - don
+  - un prix
 
-- Une vente/don peut avoir :
-- un ou plusieurs contenu imagé
 
-### Modération :
 
-- Un modérateur peut supprimer les publications inappropriées ou abusives.
-- Un modérateur peut bloquer les utilisateurs qui enfreignent les règles de l'application.
-- Un modérateur peut bannir les utilisateurs qui enfreignent les règles de l'application.
-- Un modérateur doivent être en mesure de répondre aux demandes des utilisateurs dans les plus brefs délais.
-- Un modérateur ont accès à liste des utilisateurs.
-- Un modérateur ont accès à la vue des profils utilisateurs.
-- Un modérateur ont accès à la modification des comptes utilisateurs.  
-- Un modérateur ont accès à la suppression des comptes utilisateurs.
-- Un modérateur ont accès à liste des publications.
-- Un modérateur ont accès à la vue des publications.
-- Un modérateur ont accès à la modification des publications.  
-- Un modérateur ont accès à la suppression des publications. 
+## Gestion de la Modération :
 
-1. Confidentialité :
+- Un modérateur est un utilisateur possédant tous les droits
+- Un modérateur doit répondre aux demandes des utilisateurs
+- Un modérateur a accès à liste des utilisateurs d'un groupe
+- Un modérateur n'a pas accès à la messagerie privée des utilisateurs
 
+### En cas de signalement
+- Un modérateur peut :
+  - afficher un compte utilisateur
+  - modifier un compte utilisateur  
+  - supprimer un compte utilisateur
+  - Suspendre temporairement un utilisateur qui enfreint les règles de l'application
+  
+- Un modérateur peut :
+  - afficher les publications de tous les groupes
+  - modifier les publications de tous les groupes
+  - supprimer les publications de tous les groupes
+
+- Un modérateur peut :
+  - modifier les commentaires des publications de tous les groupes
+  - supprimer les commentaire des publications de tous les groupes
+
+
+## Politique de Confidentialité :
+
+- L'utilisateur peut accéder à la politique de confidentialité du site par le biais d'une page
 - Les données personnelles des utilisateurs doivent être protégées conformément aux réglementations en vigueur.
 - Les données personnelles des utilisateurs ne doivent pas être partagées avec des tiers sans leur consentement explicite.
-- Les utilisateurs doivent être informés des politiques de confidentialité et des pratiques de collecte et de traitement des données de l'application.
+- Les utilisateurs doivent être informés des politiques de confidentialité et des pratiques de collecte et de traitement des        données de l'application.

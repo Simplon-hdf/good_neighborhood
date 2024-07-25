@@ -7,21 +7,21 @@ Plus les points attribués sont hauts, plus l'entrée du **Benchmark** est quali
 Nous nous sommes appuyés sur ce document afin de rédiger notre document de proposition<br>
 technique.<br>
 
-| Critères                 | Symfony | Laravel | Yii     | Codelgniter |
-| ------------------------ | ------- | ------- | ------- | ----------- |
-| Personnalisation         | 4       | 3       | 2       | 1           |
-| Rapidité                 | 3       | 4       | 2       | 1           |
-| Popularité               | 4       | 3       | 1       | 2           |
-| Maturité                 | 4       | 3       | 2       | 1           |
-| Releases                 | 3       | 4       | 2       | 1           |
-| Bonnes pratiques         | 4       | 3       | 2       | 1           |
-| Stars Github             | 3       | 4       | 2       | 1           |
-| Equipe Développement     | 4       | 3       | 2       | 1           |
-| Communauté Github        | 4       | 3       | 3       | 3           |
-| Communauté StackOverflow | 4       | 4       | 3       | 2           |
-| Documentation            | 4       | 4       | 4       | 4           |
-| Magie                    | 1       | 1       | 1       | 1           |
-| Mariage librairies       | 4       | 3       | 2       | 1           |
-| Tarifs                   | Gratuit | Gratuit | Gratuit | Gratuit     |
-| License                  | MIT     | MIT     | BSD     | Apache 2.0  |
-| Total                    | 46      | 42      | 28      | 20          |
+| Critères                 | Java    | .NET    | Node.js | PHP        |
+| ------------------------ | ------- | ------- | ------- | ---------- |
+| Personnalisation         | 4       | 4       | 3       | 3          |
+| Rapidité                 | 3       | 3       | 4       | 3          |
+| Popularité               | 4       | 3       | 4       | 3          |
+| Maturité                 | 4       | 4       | 2       | 4          |
+| Releases                 | 1       | 2       | 4       | 3          |
+| Bonnes pratiques         | 4       | 4       | 4       | 4          |
+| Stars Github             | 3       | 2       | 4       | 1          |
+| Equipe Développement     | 3       | 3       | 2       | 3          |
+| Communauté Github        | 3       | 2       | 4       | 1          |
+| Communauté StackOverflow | 4       | 3       | 1       | 2          |
+| Documentation            | 2       | 2       | 3       | 4          |
+| Magie                    | 3       | 3       | 2       | 2          |
+| Mariage librairies       | 2       | 1       | 3       | 4          |
+| Tarifs                   | Gratuit | Gratuit | Gratuit | Gratuit    |
+| License                  | GPL     | MIT     | MIT     | Apache 2.0 |
+| Total                    | 40      | 36      | 40      | 37         |
