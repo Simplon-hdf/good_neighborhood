@@ -54,5 +54,3 @@ HSTS (HTTP Strict Transport Security) est une fonctionnalité de sécurité web 
 Cela aide à prévenir les attaques de l'homme du milieu (MitM) et à renforcer la sécurité des données transmises entre le navigateur et le serveur web.
 Pour le cas de notre application, il est possible de mettre en œuvre HSTS via
 REACT NATIVE en utilisant les fonctionnalités de sécurité fournies par le framework. Les systèmes d'exploitations utilisent des fonctionnalités pour forcer l’utilisation d’une connexion HTTPS et mettre en œuvre HSTS.
-
-
