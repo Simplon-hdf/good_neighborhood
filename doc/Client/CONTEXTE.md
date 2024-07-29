@@ -18,23 +18,12 @@ conçue pour renforcer le lien communautaire et la sécurité dans les quartiers
 
 ## Les Problèmatiques
 
-#### Confidentialité et sécurité :  
-Les utilisateurs doivent fournir des informations personnelles telles que leur nom, prénom et adresse pour créer un compte utilisateur. Cela soulève des préoccupations en matière de confidentialité et de sécurité. L'application doit garantir que les données personnelles des utilisateurs sont protégées et sécurisées.
-
-#### Modération du contenu :  
-Les utilisateurs peuvent publier des messages, des photos et des vidéos sur l'application. Cela peut entraîner des problèmes de modération du contenu, tels que des publications inappropriées, offensantes ou illégales. L'application doit avoir des mécanismes de modération efficaces pour gérer ces problèmes.
-
-#### Vérification des utilisateurs :  
-Il peut être difficile de vérifier l'identité des utilisateurs de l'application, ce qui peut entraîner des problèmes de sécurité et de fiabilité. L'application doit avoir des mécanismes de vérification efficaces pour s'assurer que les utilisateurs sont bien ce qu'ils prétendent être.
-
-#### Accessibilité :  
-L'application doit être accessible à tous les utilisateurs, y compris ceux qui ont des besoins spécifiques tels que des problèmes de vision ou d'audition. L'application doit être conçue pour répondre aux normes d'accessibilité.
-
-#### Utilisation dans les zones rurales :  
-L'application est conçue pour les quartiers de résidence, mais elle peut ne pas fonctionner aussi bien dans les zones rurales où les utilisateurs peuvent être plus éloignés les uns des autres. L'application doit être conçue pour fonctionner dans différents contextes géographiques.
-
-#### Dépendance à la technologie : 
-L'application dépend de la technologie pour fonctionner, ce qui peut être un problème pour les utilisateurs qui n'ont pas accès à un smartphone ou à une connexion Internet fiable. L'application doit être conçue pour fonctionner sur différents types de technologies et de plates-formes.
-
-#### Engagement des utilisateurs :  
-L'application dépend de l'engagement des utilisateurs pour fonctionner efficacement. Si les utilisateurs ne publient pas régulièrement des messages ou ne réagissent pas aux publications des autres, l'application peut ne pas être utile. L'application doit être conçue pour encourager l'engagement des utilisateurs.
+Ce tableau permet d'organiser clairement les éléments à prendre en compte lors de la conception de la plateforme, en mettant en évidence les défis spécifiques et les solutions appropriées pour répondre efficacement aux besoins des utilisateurs.
+| Problématiques | Problèmes | Solutions |
+|--------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Confidentialité et sécurité** | Les utilisateurs doivent fournir des informations personnelles telles que leur nom, prénom et adresse pour créer un compte utilisateur. Cela soulève des préoccupations en matière de confidentialité et de sécurité | L'application doit garantir que les données personnelles des utilisateurs sont protégées et sécurisées. |
+| **Modération du contenu** | Les utilisateurs peuvent publier des messages, des photos et des vidéos sur l'application. Cela peut entraîner des problèmes de modération du contenu, tels que des publications inappropriées, offensantes ou illégales. | L'application doit avoir des mécanismes de modération efficaces pour gérer ces problèmes. |
+| **Gestion des utilisateurs** | Il peut être difficile de gérer les droits d'accès des utilisateurs de l'application, ce qui peut entraîner des problèmes de sécurité et de fiabilité. | L'application doit avoir des mécanismes de vérification efficaces pour s'assurer que les utilisateurs sont bien ce qu'ils prétendent être. Création, modification, et suppression de comptes utilisateurs avec des rôles définis. Attribution de rôles spécifiques pour contrôler les permissions d'accès. |
+| **Accessibilité** | L'application doit être accessible à tous les utilisateurs, y compris ceux qui ont des besoins spécifiques tels que des problèmes de vision ou d'audition. | L'application doit être conçue pour répondre aux normes d'accessibilité. |
+| **Utilisation dans les zones rurales** | L'application est conçue pour les quartiers de résidence, mais elle peut ne pas fonctionner aussi bien dans les zones rurales où les utilisateurs peuvent être plus éloignés les uns des autres. | L'application doit être conçue pour fonctionner dans différents contextes géographiques. |
+| **Engagement des utilisateurs** | L'application dépend de l'engagement des utilisateurs pour fonctionner efficacement. Si les utilisateurs ne publient pas régulièrement des messages ou ne réagissent pas aux publications des autres, l'application peut ne pas être utile. | L'application doit être conçue pour encourager l'engagement des utilisateurs, notifications push, envoi de mail |
