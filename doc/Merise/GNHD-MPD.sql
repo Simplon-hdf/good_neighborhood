@@ -30,7 +30,7 @@ CREATE TABLE ResidentGroup(
 );
 
 CREATE TABLE Message (
-   UUID_message SERIAL PRIMARY KEY,
+   UUID_message UUID PRIMARY KEY,
    message TEXT NOT NULL
 );
 
@@ -44,15 +44,15 @@ CREATE TABLE Address(
 );
 
 CREATE TABLE Comment(
-   id_comment SERIAL,
+   id_comment SERIAL PRIMARY KEY,
    comment TEXT NOT NULL,
-   UUID_User VARCHAR(50) NOT NULL,
+   UUID_User UUID NOT NULL,
    PRIMARY KEY(id_comment),
    FOREIGN KEY(UUID_User) REFERENCES Users(UUID_User)
 );
 
 CREATE TABLE Category(
-   id_category SERIAL,
+   id_category SERIAL PRIMARY KEY,
    category VARCHAR(50) NOT NULL,
    PRIMARY KEY(id_category)
 );
